@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Print Date & Time using Javascript</title>
+        <script>
+            var currentdate = new Date(); 
+            weekday = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        </script>
+    </head>
+    <body>
+    Sample Output :<br>
+    Today is : <script>
+              document.write(weekday[currentdate.getDay()])
+              </script> 
+    <br>
+    Current time is : <script>document.write( currentdate.     getHours() + " PM : "  
+        + currentdate.getMinutes() + " : " 
+        + currentdate.getSeconds())
+                    </script> 
+    </body>
+</html>

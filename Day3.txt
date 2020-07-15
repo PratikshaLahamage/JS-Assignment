@@ -1,0 +1,108 @@
+Assignment 1::Methods in Console Function
+
+1)  warn()	   
+      The console.warn() method gives warning message to the console
+     Syntax:
+         console.warn(message)
+2) error()	
+      The console.error() method gives an error message to the console.
+      Syntax:
+          console.error(message)
+3) time()	
+      The console.time() method starts a timer in the console view
+     timeEnd()
+      The console.timeEnd() method ends a timer, and writes the result in the console view.
+       Ex.:
+        <script>
+        console.time("test1");
+       // code
+       console.timeEnd("test1");
+      </script>
+4) clear() 
+      The console.clear() method clear the console &
+      also show message in the console "Console was cleared".
+5) trace()	
+     The console.trace() method displays a trace that show how the code 
+    ended up at a certain point.
+     Syntax:
+          console.trace()
+     Ex.:
+          <script>
+            function Fun1() {
+            Fun2();
+            }
+            function Fun2() {
+           console.trace();
+           }
+          </script>
+      Fun1 will be executed, which will execute another function Fun2, which will execute the                        console.trace() method, that display this trace in the console.view.
+6) table()
+      The console.table() method shows a table in the console view.
+      Syntax:
+          console.table(tabledata)
+      Ex.:
+           <script>
+               var stud1 = { name : "ABC", roll: "1" }
+               var stud2= { name : "PQR", roll: "2" }
+               var stud3 = { name : "XYZ", roll: "3" }
+               console.table([stud1 , stud1,stud1 ]);
+          </script>
+7) log()
+        The console.log() method writes a message to the console.
+         Syntax:
+             console.log(message)
+          Ex.:
+              console.log("Hello");
+8) info() 
+        The console.info() method writes a message to the console.
+         Syntax
+              console.info(message)
+9) count()
+        Shows in console, the number of times console.count() is called.
+        The first call will write-    default: 1
+        the second will write-    default: 2
+
+
+Assignment 2::Difference between var, let and const 
+  
+var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is         defined. If it is defined outside any function, the scope of the variable is global.
+         var is “function scoped”.
+
+let: The scope of a variable defined with the keyword “let”  is limited to the “block” defined by curly              braces i.e. {} .
+      “let” is “block scoped”.
+
+const: The scope of a variable defined with the keyword “const” is limited to the block . However if a                  variable is defined with keyword const, it cannot be reassigned.
+           “const” cannot be re-assigned to a new value. 
+           “const” is “block scoped”.
+
+
+Assignment 3::Data types in JavaScript
+
+1)Number
+   Ex:
+   n = 123;
+   n = 12.345;
+   The number type represents both integer and floating point numbers.
+   There are many operations for numbers, 
+       e.g. multiplication *, division /, addition +, subtraction -, and so on.
+Right now BigInt is supported in Firefox/Chrome/Edge, but not in Safari/IE.
+
+2)String
+   Ex:
+   str = "Double quotes";
+   str2 = 'Single quotes';
+   str3 = `Backticks`;
+   A string in JavaScript must be surrounded by quotes.
+   In JavaScript, there are 3 types of quotes:
+         Double quotes: "Hello".
+         Single quotes: 'Hello'.
+         Backticks: `Hello`.
+
+3)Boolean
+   The boolean type has only two values: true and false.
+   This type is commonly used to store yes/no values:
+           true means “yes, correct”, and false means “no, incorrect”.
+   Ex:
+     a = true; // yes
+     b = false; // no 
+

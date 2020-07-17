@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Grade</title>
+    <script>
+        function fun(marks)
+        {
+            var grade;
+           (marks>=75)?grade="A": (marks>=65)?grade="B": (marks>=45)?grade="C":grade="F";
+           document.write(`Marks are "${marks}" and grade is "${grade}"`);
+        }
+    </script>
+</head>
+<body>
+   <h3> Enter Your Marks:<script>
+        var mark=parseFloat(prompt("Enter Your Marks:"));
+        document.write(mark);
+    </script></h3><br>
+    Click below button to check grade <br><br>
+
+    <button onclick="fun(mark)">
+    check</button>
+</body>
+</html>

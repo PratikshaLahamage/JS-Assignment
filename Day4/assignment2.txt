@@ -1,0 +1,65 @@
+JavaScript Array Method
+
+1)toString():
+      The JavaScript method toString() converts an array to a string.
+      Example:
+          var arr = ["abc", "def", "ghi", "jkl"];
+          arr.toString();
+      Output:
+          abc,def,ghi,jkl
+
+2)delete:
+       Using delete,elements can be deleted.
+       Example:
+           var arr = ["abc", "def", "ghi", "jkl"];
+           delete arr[0];           // Changes the first element to undefined .
+
+3)splice():
+       The splice() method can be used to add new items to an array:
+        Using splice() ,we can remove elements from array
+       Example:
+             var arr = ["abc", "def", "ghi", "jkl"];
+             arr.splice(0,1);
+       Output:
+              def,ghi, jkl
+
+4)join():
+      The join() method also joins all array elements into a string.
+      It behaves just like toString(), but in addition you can specify the separator.
+      Example:
+           var arr = ["abc", "def", "ghi", "jkl"];
+           arr.join(" * ");
+      Output:
+            abc*def*ghi*jkl
+
+5)pop():
+      The pop() method removes the last element from an array.
+      Example:
+           var arr = ["abc", "def", "ghi", "jkl"];
+           var x = arr.pop();              // Removes the last element and stored into x.
+
+6)push():
+      The push() method adds a new element to an array (at the end):
+      Example:
+           var arr = ["abc", "def", "ghi", "jkl"];
+           arr.push("mn");       //  Adds a new element.
+
+7)shift() :
+      The shift() method removes the first array element and "shifts" all other elements to a lower index.
+      Example:
+      var arr = ["abc", "def", "ghi", "jkl"];
+      arr.shift();            // Removes the first element.
+
+8)unshift():
+      The unshift() method adds a new element to an array at  beginning.
+      The unshift() method returns the new array length.
+      Example:
+           var arr = ["abc", "def", "ghi", "jkl"];
+           arr.unshift("XXX");    // Adds a new element.
+
+9)concat() :
+      The concat() method creates a new array by merging to existing array.
+      Example:
+         var arr1 = ["abc", "def"];
+         var arr2= ["ghi", "jkl"];
+         var alphabet= arr1.concat(arr2); 

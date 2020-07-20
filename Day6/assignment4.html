@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Day6</title>
+	<script> 		
+		function assign(val) 
+		{ 
+			document.getElementById("result").value+=val 
+		} 
+		function solve() 
+		{ 
+			let x = document.getElementById("result").value 
+			let y = eval(x) 
+			document.getElementById("result").value = y 
+		} 
+		function clear() 
+		{ 
+			document.getElementById("result").value = "" 
+		} 
+	</script> 
+</head> 
+<body>  
+	<table> 
+		<tr> 
+            <td colspan="3"><input type="text" id="result"/>
+            </td> 
+			<td><input type="button" value="C" onclick="clear()"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick="assign('1')"/> </td> 
+			<td><input type="button" value="2" onclick="assign('2')"/> </td> 
+			<td><input type="button" value="3" onclick="assign('3')"/> </td> 
+			<td><input type="button" value="/" onclick="assign('/')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="assign('4')"/> </td> 
+			<td><input type="button" value="5" onclick="assign('5')"/> </td> 
+			<td><input type="button" value="6" onclick="assign('6')"/> </td> 
+			<td><input type="button" value="-" onclick="assign('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="assign('7')"/> </td> 
+			<td><input type="button" value="8" onclick="assign('8')"/> </td> 
+			<td><input type="button" value="9" onclick="assign('9')"/> </td> 
+			<td><input type="button" value="+" onclick="assign('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick="assign('.')"/> </td> 
+			<td><input type="button" value="0" onclick="assign('0')"/> </td> 
+			<td><input type="button" value="=" onclick="solve()"/> </td> 
+			<td><input type="button" value="*" onclick="assign('*')"/> </td> 
+        </tr> 
+	</table> 
+</body> 
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime no.</title>
+    <script>
+        function isprime(n){
+            var temp=0;
+            let i,j;
+            for(i=2;i<=n;i++){
+                for(j=1;j<=i-1;j++){
+                    if(i%j==0){
+                       temp++;
+                    } 
+                }
+                if(temp==1){
+                    console.log(i);
+                    temp=0;
+                }else{
+                    temp=0;
+                }
+            }
+        }       
+        isprime(30);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

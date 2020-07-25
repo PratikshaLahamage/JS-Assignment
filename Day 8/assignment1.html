@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    
+</head>
+<body>
+    <div id="background" style="width: 100%; height: 100vh;"></div>
+
+    <script>
+        let i=0;
+        function change(){
+            let doc = document.getElementById("background");
+            let color = ["pink","Yellow","black","brown","blue","green","white"];
+            doc.style.backgroundColor=color[i];         
+            i=(i+1)%color.length;
+        }
+        setInterval(change,1000);
+    </script>
+</body>
+</html>

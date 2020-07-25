@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+
+    <script>
+       function sub(){
+           var arr=[];
+           let j=0;
+           let input=document.getElementsByName("array[]");
+           for(let i=0;i<input.length;i++){
+               if(!(input[i].value%2==0))
+               {
+               arr[j]=input[i].value;
+                j++;
+               }          
+           }
+           console.log(`Odd array is :: ${arr}`);
+           arr=arr.map(a=>a**2);
+           console.log(`Square of array element is :: ${arr}`);
+
+       }
+    </script>
+   
+</head>
+<body>  
+    <form class="arr">
+        Take Positive input from User
+        <br><br>
+        <input type="number" min="0" name="array[]"><br>
+        <input type="number" min="0" name="array[]"><br>
+        <input type="number" min="0" name="array[]"><br>
+        <input type="number" min="0" name="array[]"><br>
+        <input type="number" min="0" name="array[]"><br>
+        <input type="number" min="0" name="array[]"><br><br>
+        <button type="button" name="button" onclick="sub()">Submit</button>
+        
+    </form>
+    
+</body>
+</html>
